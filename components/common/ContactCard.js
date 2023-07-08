@@ -70,8 +70,8 @@ export default function MyModal() {
                   as="h3"
                   className="font-semibold leading-relaxed"
                 >
-                  <span className="hidden sm:block">呀呼! <a href="https://t.me/SVM_JM" target="_blank">认识一下</a>吧</span>
-                  <span className="sm:hidden">长按识别</span>
+                  <span className="hidden sm:block">呀呼!<a href="https://t.me/SVM_JM" target="_blank">认识一下</a>吧</span>
+                  <span className="sm:hidden">Telegram</span>
                 </Dialog.Title>
               </div>
             </Dialog.Panel>

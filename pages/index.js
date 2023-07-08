@@ -46,7 +46,7 @@ export default function blog({ posts }) {
               />
             </div>
             <p className="text-[22px] font-semibold my-0 group-hover:text-blue-700 group-active:text-blue-900 dark:group-active:text-blue-500 dark:group-hover:text-blue-400 leading-snug">
-              置顶博文 | 但我暂时没想好在这里放什么耶 :)
+              置顶博文 | 但暂时没想好在这里放什么耶 :)
             </p>
             <p className="mt-1 mb-0 text-secondary text-base elis-2">
             等我再写多点文章后吧
