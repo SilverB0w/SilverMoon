@@ -20,6 +20,7 @@ export default function BlogFooter({pageTitle}) {
           <div className="text-lg font-semibold">🌠 感谢阅读</div>
           <div className="text-secondary md:break-keep">
             <span className="hidden sm:inline">如果对文章有想法，这里有我的联系<span className="whitespace-nowrap">方式。</span>如果觉得这篇文章还不错，欢迎分享给<span className="whitespace-nowrap">朋友！</span></span>
+            
             <span className="inline sm:hidden">这里有我的联系<span className="whitespace-nowrap">方式。</span>如果觉得这篇文章还不错，欢迎分享给<span className="whitespace-nowrap">朋友！</span></span>
           </div>
         </div>
