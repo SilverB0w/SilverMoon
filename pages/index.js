@@ -16,7 +16,7 @@ export default function blog({ posts }) {
   return (
     <>
       <Head>
-        <title>文章 - {siteMetadata.title}</title>
+        <title>{siteMetadata.title}</title>
       </Head>
       <div className="layout flex flex-col">
         {/* 置顶博文 */}
