@@ -16,7 +16,7 @@ export default function Custom404() {
         </div>
         <p className="mb-0 mt-4 leading-normal text-secondary break-keep">
           请从这里返回
-           <Link href="/blog" className="whitespace-nowrap">月球</Link>。
+           <Link href="/" className="whitespace-nowrap">月球</Link>。
         </p>
       </div>
     </>
