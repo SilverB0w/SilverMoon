@@ -23,19 +23,19 @@ const blogCategoriesData = [
       num: "2",
     },
     {
-      name: "强健体魄",
+      name: "健康生活",
       desc: "记录有关于健康、运动、养生的一切，碳基载具可是很脆弱的啊喂",
       url: "health",
       num: "0",
     },
     {
-      name: "周期总结",
+      name: "周期报告",
       desc: "存放阶段性复盘的笔记",
       url: "summary",
       num: "0",
     },
     {
-      name: "好文推荐",
+      name: "文章推荐",
       desc: "分享对我有所启迪的国内外优质文章",
       url: "sharing2",
       num: "0",

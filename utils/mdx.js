@@ -134,7 +134,7 @@ export const getCategoriesTranslate = () => {
       const source = getSourceOfFile(fileName);
       const slug = fileName.replace(/\.mdx?$/, "");
       const { data } = matter(source);
-      if (data.category === "强健体魄") {
+      if (data.category === "健康生活") {
         return {
           frontmatter: data,
           slug: slug,
@@ -153,7 +153,7 @@ export const getCategoriesSoftware = () => {
       const source = getSourceOfFile(fileName);
       const slug = fileName.replace(/\.mdx?$/, "");
       const { data } = matter(source);
-      if (data.category === "周期总结") {
+      if (data.category === "周期报告") {
         return {
           frontmatter: data,
           slug: slug,
@@ -172,7 +172,7 @@ export const getCategoriesOthers = () => {
       const source = getSourceOfFile(fileName);
       const slug = fileName.replace(/\.mdx?$/, "");
       const { data } = matter(source);
-      if (data.category === "好文推荐") {
+      if (data.category === "文章推荐") {
         return {
           frontmatter: data,
           slug: slug,
