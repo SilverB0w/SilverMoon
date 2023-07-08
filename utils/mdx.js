@@ -77,7 +77,7 @@ export const getCategoriesTypographic = () => {
       const source = getSourceOfFile(fileName);
       const slug = fileName.replace(/\.mdx?$/, "");
       const { data } = matter(source);
-      if (data.category === "字体 & 排版策略") {
+      if (data.category === "博闻强识") {
         return {
           frontmatter: data,
           slug: slug,
@@ -96,7 +96,7 @@ export const getCategoriesExperience = () => {
       const source = getSourceOfFile(fileName);
       const slug = fileName.replace(/\.mdx?$/, "");
       const { data } = matter(source);
-      if (data.category === "实践经验沉淀") {
+      if (data.category === "日常随笔") {
         return {
           frontmatter: data,
           slug: slug,
@@ -115,7 +115,7 @@ export const getCategoriesSharing = () => {
       const source = getSourceOfFile(fileName);
       const slug = fileName.replace(/\.mdx?$/, "");
       const { data } = matter(source);
-      if (data.category === "分享会文稿") {
+      if (data.category === "好物安利") {
         return {
           frontmatter: data,
           slug: slug,
@@ -134,7 +134,7 @@ export const getCategoriesTranslate = () => {
       const source = getSourceOfFile(fileName);
       const slug = fileName.replace(/\.mdx?$/, "");
       const { data } = matter(source);
-      if (data.category === "翻译好文") {
+      if (data.category === "强健体魄") {
         return {
           frontmatter: data,
           slug: slug,
@@ -153,7 +153,7 @@ export const getCategoriesSoftware = () => {
       const source = getSourceOfFile(fileName);
       const slug = fileName.replace(/\.mdx?$/, "");
       const { data } = matter(source);
-      if (data.category === "软件插件") {
+      if (data.category === "周期总结") {
         return {
           frontmatter: data,
           slug: slug,
@@ -172,7 +172,7 @@ export const getCategoriesOthers = () => {
       const source = getSourceOfFile(fileName);
       const slug = fileName.replace(/\.mdx?$/, "");
       const { data } = matter(source);
-      if (data.category === "设计之外") {
+      if (data.category === "好文推荐") {
         return {
           frontmatter: data,
           slug: slug,

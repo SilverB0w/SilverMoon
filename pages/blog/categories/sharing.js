@@ -12,7 +12,7 @@ export default function cateSharing({ posts }) {
     <>
       <Head>
         <title>
-          {blogCategoriesData[2].name} - 博客 - {siteMetadata.title}
+          {blogCategoriesData[2].name} - 文章 - {siteMetadata.title}
         </title>
         <meta name="description" content={blogCategoriesData[2].desc} />
 
@@ -21,7 +21,7 @@ export default function cateSharing({ posts }) {
         <meta property="og:image:alt" content="网站宽屏图的描述" />
         <meta
           property="og:title"
-          content={`${blogCategoriesData[2].name} - 博客 - ${siteMetadata.title}`}
+          content={`${blogCategoriesData[2].name} - 文章 - ${siteMetadata.title}`}
         />
         <meta property="og:description" content={blogCategoriesData[2].desc} />
       </Head>

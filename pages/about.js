@@ -6,34 +6,54 @@ export default function about() {
   return (
     <>
       <Head>
-        <title>关于我 - {siteMetadata.title}</title>
+        <title>关于 - {siteMetadata.title}</title>
       </Head>
 
       <div className="layout about flex flex-col gap-6">
         <section>
-        <h1 className="">关于我</h1>
-        <p className="mb-3 mt-3 sm:mt-6">
-          仍然存在某种执念的设计师...
-          <br />
-          了解我过往的工作经历，请访问<Link href="/me" target="_blank" title="李瑞东简历">个人简历</Link>。联系我：<span className="select-all whitespace-nowrap">lrdbuff@gmail.com</span>
-        </p>
-        </section>
-        <section>
-          <h2 className="text-[22px] font-semibold">关于本站</h2>
-          <p className="mt-2 sm:mt-3">
-          LRD.IM 是我的个人网站，记录我的设计作品、博客等，是我设计师生涯中很重要的<span className="whitespace-nowrap">一部分。</span>
-          </p>
+          <h2 className="text-[22px] font-semibold">个人简介</h2>
+
           <p className="mt-2 sm:mt-3 mb-3">
-          自&thinsp;2017&thinsp;年&thinsp;12&thinsp;月&thinsp;31&thinsp;日建站至今，已经经历了&thinsp;3&thinsp;次 “大型” 改版重构，现在你所看到的网站是使用 <Link href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" title="Next.js">Next.js</Link> 和 <Link href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" title="Tailwind CSS">Tailwind CSS</Link> 搭建<span className="whitespace-nowrap">而成。</span>
+          隽敏，Jimmy，取名致敬动画大师—<a href="https://zh.wikipedia.org/wiki/今敏" target="_blank">今敏</a>。
+          </p>
+
+          <p className="mt-2 sm:mt-3 mb-3">
+          普通碳基生物，供能燃料为睡眠，运动与自由。
+          </p>
+
+          <p className="mt-2 sm:mt-3 mb-3">
+          喜静，爱独处。人生如游戏，愿你我成为平凡生活里的冒险家。
           </p>
           
         </section>
+
         <section>
-          <h2 className="text-[22px] font-semibold">其他</h2>
-          <p className="mt-2 mb-3">
-          本站永久开源，可在 <Link href="https://github.com/Pudge1996/NEXT.LRD.IM" target="_blank" rel="noopener noreferrer" title="Github">Github</Link> 中查看本站代码。期望有大佬在前端体验、代码质量上指点一二。同时也可以在 <Link href="/updates" title="Github">What's New</Link> 中查看更新<span className="whitespace-nowrap">记录。</span>
+          <h2 className="text-[22px] font-semibold">关于本站</h2>
+
+          <p className="mt-2 sm:mt-3 mb-3">
+          银月，来源于神话中的<a href="https://en.wikipedia.org/wiki/Artemis" target="_blank">Artemis</a>。
           </p>
+
+          <p className="mt-2 sm:mt-3 mb-3">
+          博客使用该<Link href="https://github.com/Pudge1996/NEXT.LRD.IM" target="_blank" rel="noopener noreferrer" title="Theme">主题</Link>，通过 <Link href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" title="Next.js">Next.js</Link> 和 <Link href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" title="Tailwind CSS">Tailwind CSS</Link> 搭建<span className="whitespace-nowrap">而成。</span>
+          </p>
+
+          <p className="mt-2 sm:mt-3 mb-3">
+          这里是自说自话的小天地里记录生活。仅有我和你/妳的交流，倾听思维的脉搏。没有<span className="whitespace-nowrap">违禁词，</span>删帖警告，口口文学的困扰，来去自如。欢迎你来到这里。
+          </p>
+
         </section>
+
+
+        <section>
+          <h2 className="text-[22px] font-semibold">联系方式</h2>
+
+          <p className="mt-2 sm:mt-3 mb-1">
+          SVM-JM@outlook.com
+          </p>
+
+        </section>
+
       </div>
     </>
   );

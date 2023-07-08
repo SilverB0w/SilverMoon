@@ -11,12 +11,12 @@ export default function Custom404() {
 
       <div className="layout text-center h-[600px] flex flex-col items-center justify-center">
         <div>
-          <div className="text-6xl sm:text-8xl mb-2 sm:mb-4 select-none inline-block motion-safe:hover:animate-[bounce_0.2s_ease-in-out_infinite] will-change-auto">🙇</div>
-          <h1 className="px-6">唔好意思<span className="tracking-[-0.35em]">，</span>这里<span className="whitespace-nowrap">没有内容<span className="absolute tracking-[-0.35em]">。</span></span></h1>
+          <div className="text-6xl sm:text-8xl mb-2 sm:mb-4 select-none inline-block motion-safe:hover:animate-[bounce_0.2s_ease-in-out_infinite] will-change-auto">💫</div>
+          <h1 className="px-6">啊噢<span className="tracking-[-0.35em]">，</span>你来到了<span className="whitespace-nowrap">404禁区<span className="absolute tracking-[-0.35em]">！</span></span></h1>
         </div>
         <p className="mb-0 mt-4 leading-normal text-secondary break-keep">
-          我的网站在不久前进行了重构，导致部分链接失效了。<br/>猜你可能会想访问我的
-          <Link href="/blog" className="whitespace-nowrap">设计博客</Link>。
+          请从这里返回
+           <Link href="/blog" className="whitespace-nowrap">月球</Link>。
         </p>
       </div>
     </>

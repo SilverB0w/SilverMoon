@@ -2,7 +2,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import React from "react";
 import Image from "next/image";
-// 个人微信的弹窗
+// 个人联系方式的弹窗
 
 export default function MyModal() {
   const [isLoaded, setIsLoaded] = React.useState(false);
@@ -54,10 +54,10 @@ export default function MyModal() {
               <div className="flex flex-col gap-3">
                 <div className={`relative flex w-full aspect-square rounded-md select-none h-full max-h-[35vh] img-loading-bg ${isLoaded ? '' : 'img-loading-spin'}`}>
                   <Image
-                    // 项目图片
-                    src="https://lrdim.oss-cn-shenzhen.aliyuncs.com/qr-code.png"
-                    alt="微信号：18925001685"
-                    className="object-contain rounded-md"
+                    // 图片
+                    src="https://cdn.jsdelivr.net/gh/SilverB0w/SM-image@main/card.jpg"
+                    alt="@SVM_JM"
+                    className=" rounded-md"
                     onLoad={() => setIsLoaded(true)}
                     onError={() => setIsLoaded(true)}
                     // fill
@@ -70,8 +70,8 @@ export default function MyModal() {
                   as="h3"
                   className="font-semibold leading-relaxed"
                 >
-                  <span className="hidden sm:block">扫一扫加我微信</span>
-                  <span className="sm:hidden">长按识别加我微信</span>
+                  <span className="hidden sm:block">呀呼! <a href="https://t.me/SVM_JM" target="_blank">认识一下</a>吧</span>
+                  <span className="sm:hidden">长按识别</span>
                 </Dialog.Title>
               </div>
             </Dialog.Panel>

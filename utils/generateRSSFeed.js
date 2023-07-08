@@ -5,19 +5,19 @@ import { getAllPosts } from "./mdx";
 
 
 export default async function generateRssFeed() {
-  const site_url = "https://lrd.im";
+  const site_url = "https://silver-moon.cc/";
 
   const posts = getAllPosts().posts;
   const allPosts = await posts;
 
   const feedOptions = {
-    title: "李瑞东的设计博客",
-    description: "记录我的设计生涯。",
+    title: "银月长廊",
+    description: "有关在蓝星的一切",
     site_url: site_url,
     feed_url: `${site_url}/feed.xml`,
     image_url: `${siteMetadata.authorImg}`,
     pubDate: new Date(),
-    copyright: `© 李瑞东 2017- ${new Date().getFullYear()}`,
+    copyright: `© 隽敏 2023- ${new Date().getFullYear()}`,
     managingEditor: `${siteMetadata.author}`,
     webMaster: `${siteMetadata.author}`,
     ttl: '60',

@@ -1,7 +1,8 @@
+
 const headerNavLinks = [
-    { url: '/', title: '作品' },
-    { url: '/blog', title: '博客' },
-    { url: '/about', title: '关于我' },
+    { url: '/', title: '首页' },
+    { url: '/blog', title: '文章' },
+    { url: '/about', title: '简介'},
   ]
   
   export default headerNavLinks

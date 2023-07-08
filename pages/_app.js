@@ -17,8 +17,6 @@ export default function MyApp({ Component, pageProps }) {
         <meta property="og:image" content="网站宽屏图（16:9）" />
         <meta property="og:image:alt" content="网站宽屏图的描述" />
         <meta name="og:type" content="summary" />
-        <meta name="twitter:site" content="@Pudge_1996" />
-        <meta name="twitter:creator" content="@Pudge_1996" />
       </Head>
       <GoogleAnalytics trackPageViews={{ ignoreHashChange: true }} />
       <ThemeProvider attribute="class" storageKey="theme">

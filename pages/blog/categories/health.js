@@ -1,39 +1,34 @@
 import Head from "next/head";
 import Link from "next/link";
 import { HiThumbUp } from "react-icons/hi"; //https://react-icons.github.io/react-icons/icons?name=hi
-import { getCategoriesOthers } from "/utils/mdx";
+import { getCategoriesTranslate } from "/utils/mdx";
 import siteMetadata from "/data/siteMetadata";
 import blogCategoriesData from "/data/blog/blogCategoriesData";
 
-import Date from "/components/common/Date";
+import Date from "/components/common/Date"
 
-export default function cateOthers({ posts }) {
+export default function cateTranslate({ posts }) {
   return (
     <>
       <Head>
-        <title>
-          {blogCategoriesData[5].name} - 博客 - {siteMetadata.title}
-        </title>
-        <meta name="description" content={blogCategoriesData[5].desc} />
+        <title>{blogCategoriesData[3].name} - 文章 - {siteMetadata.title}</title>
+        <meta name="description" content={blogCategoriesData[3].desc} />
 
         {/* For Soical Meida (OpenGraph) */}
         <meta property="og:image" content="网站宽屏图（16:9）" />
         <meta property="og:image:alt" content="网站宽屏图的描述" />
-        <meta
-          property="og:title"
-          content={`${blogCategoriesData[5].name} - 博客 - ${siteMetadata.title}`}
-        />
-        <meta property="og:description" content={blogCategoriesData[5].desc} />
+        <meta property="og:title" content={`${blogCategoriesData[3].name} - 文章 - ${siteMetadata.title}`} />
+        <meta property="og:description" content={blogCategoriesData[3].desc} />
       </Head>
       <div className="layout series">
         {/* 博客列表 */}
-        <h1>{blogCategoriesData[5].name}</h1>
-        <p>{blogCategoriesData[5].desc}</p>
+        <h1>{blogCategoriesData[3].name}</h1>
+        <p>{blogCategoriesData[3].desc}</p>
 
         <hr />
 
         <div className="flex flex-col gap-8">
-          {posts.map((post, index) => (
+        {posts.map((post, index) => (
             <section key={index} className="flex flex-col">
               <Link
                 href={post.frontmatter.recommendLink}
@@ -70,7 +65,7 @@ export default function cateOthers({ posts }) {
 }
 
 export const getStaticProps = async () => {
-  const posts = getCategoriesOthers();
+  const posts = getCategoriesTranslate();
 
   return {
     props: { posts },

@@ -9,7 +9,7 @@ const nextConfig = {
   images: {
     deviceSizes: [960],
     unoptimized: true,
-    domains: ["lrdim.oss-cn-shenzhen.aliyuncs.com", "lrd.im", "aliyuncs.com"],
+    domains: ["cdn.jsdelivr.net", "silver-moon.cc", "github.com/SilverB0w/SM-image","SilverB0w/SM-image@main"],
   },
 };
 

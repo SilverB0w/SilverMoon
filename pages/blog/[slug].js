@@ -157,7 +157,7 @@ const Post = ({ code, frontmatter }) => {
                     />
                   </div>
                   <div className="flex flex-col grow gap-2">
-                    <div className="font-medium leading-none">李瑞东</div>
+                    <div className="font-medium leading-none">隽敏</div>
                     <div className="text-sm text-tertiary leading-none">
                       发布于 <Date dateString={frontmatter.date} />
                     </div>
