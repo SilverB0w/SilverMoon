@@ -14,7 +14,7 @@ export default function about() {
           <h2 className="text-[22px] font-semibold">个人简介</h2>
 
           <p className="mt-2 sm:mt-3 mb-3">
-          隽敏，Jimmy，取名致敬动画大师—<a href="https://zh.wikipedia.org/wiki/今敏" target="_blank">今敏</a>。
+          隽敏，Jimmy，取名致敬<a href="https://zh.wikipedia.org/wiki/今敏" target="_blank">动画大师—今敏</a>。
           </p>
 
           <p className="mt-2 sm:mt-3 mb-3">
@@ -39,7 +39,7 @@ export default function about() {
           </p>
 
           <p className="mt-2 sm:mt-3 mb-3">
-          博文遵循<Link href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" title="Theme">CC BY-NC-SA 4.0许可协议</Link>，转载请注明文章链接。
+          博文遵循 <Link href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" title="Theme">CC BY-NC-SA 4.0 许可协议</Link> ，转载请注明文章链接。
           </p>
 
           
