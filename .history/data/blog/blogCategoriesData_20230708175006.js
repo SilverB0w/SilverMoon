@@ -14,7 +14,7 @@ const blogCategoriesData = [
       name: "日常随笔",
       desc: "篇幅较短的碎片想法，草稿",
       url: "life",
-      num: "2",
+      num: "1",
     },
     {
       name: "好物安利",
