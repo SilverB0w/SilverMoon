@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title><![CDATA[新月集]]></title>
+        <title><![CDATA[银月长廊]]></title>
         <description><![CDATA[有关在蓝星的一切]]></description>
-        <link>https://mo3on.com/</link>
+        <link>https://silver-moon.cc/</link>
         <image>
             <url>https://img.mo3on.com/2023/08/avatar.jpg</url>
-            <title>新月集</title>
-            <link>https://mo3on.com/</link>
+            <title>银月长廊</title>
+            <link>https://silver-moon.cc/</link>
         </image>
         <generator>RSS for Node</generator>
         <lastBuildDate>Sun, 13 Aug 2023 01:43:25 GMT</lastBuildDate>
