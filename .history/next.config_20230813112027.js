@@ -9,7 +9,7 @@ const nextConfig = {
   images: {
     deviceSizes: [960],
     unoptimized: true,
-    domains: [, "img.mo3on.com","mo3on.com"],
+    domains: [, "https://mo3on.com"],
   },
 };
 

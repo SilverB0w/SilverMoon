@@ -11,7 +11,7 @@ export default async function generateRssFeed() {
   const allPosts = await posts;
 
   const feedOptions = {
-    title: "新月集",
+    title: 新月集",
     description: "有关在蓝星的一切",
     site_url: site_url,
     feed_url: `${site_url}/feed.xml`,
@@ -31,6 +31,7 @@ export default async function generateRssFeed() {
       title: post.frontmatter.title,
       description: post.frontmatter.description,
       url: `${site_url}/blog/${post.slug}`,
+
       date: date,
       author: `${siteMetadata.author}`,
     });

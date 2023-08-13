@@ -5,7 +5,7 @@ import { getAllPosts } from "./mdx";
 
 
 export default async function generateRssFeed() {
-  const site_url = "https://mo3on.com/";
+  const site_url = "https://silver-moon.cc/";
 
   const posts = getAllPosts().posts;
   const allPosts = await posts;

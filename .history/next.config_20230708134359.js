@@ -9,7 +9,7 @@ const nextConfig = {
   images: {
     deviceSizes: [960],
     unoptimized: true,
-    domains: [, "img.mo3on.com","mo3on.com"],
+    domains: ["cdn.jsdelivr.net", "silver-moon.cc", "github.com/SilverB0w/SM-image","SilverB0w/SM-image@main"],
   },
 };
 
