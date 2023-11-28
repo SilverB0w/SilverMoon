@@ -30,7 +30,7 @@ export default function blog({ posts }) {
             isLoaded ? "" : "img-loading-spin"
           }`}>
               <Image
-                src="https://img.mo3on.com/2023/Galaxy.png"
+                src="https://cdn.jsdelivr.net/gh/SilverB0w/SM-image@main/BadGirl-1.jpg"
                 alt=""
                 onLoad={() => setIsLoaded(true)}
                 onError={() => setIsLoaded(true)}

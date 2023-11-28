@@ -29,7 +29,7 @@ export default function blog({ posts }) {
             <div className={`relative mb-5 rounded-lg select-none h-[144px] sm:h-[300px] overflow-hidden img-loading-bg ${
             isLoaded ? "" : "img-loading-spin"
           }`}>
-              <Image
+              <ImageImage
                 src="https://img.mo3on.com/2023/Galaxy.png"
                 alt=""
                 onLoad={() => setIsLoaded(true)}
