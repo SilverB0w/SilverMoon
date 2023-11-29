@@ -1,0 +1,90 @@
+import React from "react";
+import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
+import { HiThumbUp } from "react-icons/hi"; //https://react-icons.github.io/react-icons/icons?name=hi
+import { getAllPosts } from "/utils/mdx";
+import siteMetadata from "/data/siteMetadata";
+import blogCategoriesData from "/data/blog/blogCategoriesData";
+import Date from "/components/common/Date";
+import generateRssFeed from '/utils/generateRSSFeed';
+
+
+export default function blog({ posts }) {
+  const [isLoaded, setIsLoaded] = React.useState(false);
+
+  return (
+    <>
+      <Head>
+        <title>{siteMetadata.title}</title>
+      </Head>
+      <div className="layout flex flex-col">
+        {/* 博文标签 */}
+       
+        <div className="flex flex-row flex-wrap gap-3">
+        {blogCategoriesData.map((data, index) => (
+          <Link
+            href={`/blog/categories/${data.url}`}
+            className="flex flex-col gap-[2px] btn-base py-2 sm:py-3 px-4 sm:px-6 bg-neutral-100 dark:bg-neutral-900 hover:bg-neutral-200 rounded-lg w-[calc((100%-1.5rem)/2)] md:w-[calc((100%-1.5rem)/3)] grow"
+            key={index}
+          >
+            <p className="my-0 text-base sm:text-lg font-semibold elis-1">
+              {data.name}
+            </p>
+            <p className="my-0 hidden sm:block text-base text-tertiary">
+              共&thinsp;{data.num}&thinsp;篇
+            </p>
+          </Link>
+        ))}
+        </div>  
+
+{/* 博客列表 */}
+<div className="flex gap-4 items-center my-4 sm:mt-4"></div>
+<div className="flex flex-wrap gap-8 sm:max-md:gap-6 mt-0 sm:mt-2">
+  {posts.map((post, index) => (
+    <div className="sm:w-[calc(33.3333%-1rem)]" key={index}>
+      <Link
+        href={`/blog/${post.slug}`}
+        className="group flex flex-col ring-default"
+        alt={post.frontmatter.title}
+      >
+        {/* 添加文章封面图片 */}
+        {post.frontmatter.coverImage && (
+          <div className={`relative aspect-video mb-3 rounded-lg select-none overflow-hidden img-loading-bg ${isLoaded ? '' : 'img-loading-spin'}`}>
+            <img
+              src={post.frontmatter.coverImage}
+              alt={`封面图片 - ${post.frontmatter.title}`}
+              onLoad={() => setIsLoaded(true)}
+              onError={() => setIsLoaded(true)}
+              className="rounded-lg object-cover w-full h-full"
+              width={608}
+              height={342}
+            />
+          </div>
+        )}
+        <h3 className="text-lg font-semibold leading-tight mb-1 sm:group-hover:text-blue-600 group-active:text-blue-800 sm:group-active:text-blue-800 dark:sm:group-hover:text-blue-400 dark:group-active:text-blue-500 sm:dark:group-active:text-blue-500">
+          {post.frontmatter.title}
+        </h3>
+        <div className="leading-snug text-secondary">
+          {post.frontmatter.description}
+        </div>
+      </Link>
+      <time className="mt-1 text-tertiary">
+        <Date dateString={post.frontmatter.date} />
+      </time>
+    </div>
+  ))}
+</div>
+
+</div>
+</>
+);
+}
+export const getStaticProps = async () => {
+  const posts = getAllPosts().posts;
+  await generateRssFeed();
+
+  return {
+    props: { posts },
+  };
+};

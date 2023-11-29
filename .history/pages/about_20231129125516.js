@@ -23,7 +23,8 @@ export default function about() {
 
           
           <p className="mt-2 sm:mt-3 mb-3">
-          人生如游戏，愿你我成为平凡生活里的冒险家。
+    人生如游戏，愿你我成为平凡生活里的冒险家。
+
           </p>
           
         </section>
