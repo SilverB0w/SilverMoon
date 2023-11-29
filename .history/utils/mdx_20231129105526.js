@@ -115,7 +115,7 @@ export const getCategoriesSharing = () => {
       const source = getSourceOfFile(fileName);
       const slug = fileName.replace(/\.mdx?$/, "");
       const { data } = matter(source);
-      if (data.category === "安利药丸") {
+      if (data.category === "") {
         return {
           frontmatter: data,
           slug: slug,

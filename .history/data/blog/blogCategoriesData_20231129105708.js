@@ -18,7 +18,7 @@ const blogCategoriesData = [
     },
     {
       name: "安利药丸",
-      desc: "分享好玩，有趣的人事物",
+      desc: "分享件",
       url: "sharing",
       num: "2",
     },

@@ -19,7 +19,7 @@ export default function cateExperience({ posts }) {
         <meta property="og:image:alt" content="网站宽屏图的描述" />
         <meta property="og:title" content={`${blogCategoriesData[1].name} - 文章 - ${siteMetadata.title}`} />
         <meta property="og:description" content={blogCategoriesData[1].desc} />
-      </Head>f
+      </Head>
       
       <div className="layout series">
         {/* 博客列表 */}

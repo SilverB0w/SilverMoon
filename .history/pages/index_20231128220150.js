@@ -45,8 +45,8 @@ export default function blog({ posts }) {
                 // }}
               />
             </div>
-            <p className="text-[15px] font-semibold  my-0 leading-snug text-center">
-             𝐸𝑣𝑒𝑛 𝑎𝑙𝑙 𝑡ℎ𝑒 𝑤𝑎𝑦 𝑜𝑣𝑒𝑟 ℎ𝑒𝑟𝑒,𝑡ℎ𝑒𝑟𝑒'𝑠 𝑎 𝑑𝑟𝑜𝑝 𝑜𝑓 𝑑𝑒𝑎𝑡ℎ 𝑖𝑛 𝑡ℎ𝑒 𝑠𝑝𝑟𝑖𝑛𝑔 𝑎𝑖𝑟 
+            <p className="text-[15px] font-semibold italic my-0 leading-snug">
+            给你ban
             </p>
 
           </Link>
