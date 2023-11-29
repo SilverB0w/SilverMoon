@@ -27,13 +27,17 @@ export default async function generateRssFeed() {
 
   allPosts.map((post) => {
     let date = new Date(post.frontmatter.date.slice(0, 4), post.frontmatter.date.slice(4, 6) - 1, post.frontmatter.date.slice(6, 8));
+    const imageUrl = post.frontmatter.coverImage;
+    console.log('Cover image URL:', post.frontmatter.coverImage);
+    const imageType = imageUrl.endsWith('.png') ? 'image/png' : (imageUrl.endsWith('.jpg') || imageUrl.endsWith('.jpeg')) ? 'image/jpeg' : '';
+  
     feed.item({
       title: post.frontmatter.title,
       description: post.frontmatter.description,
       url: `${site_url}/blog/${post.slug}`,
       date: date,
       author: `${siteMetadata.author}`,
-    });
+      enclosure: { url: imageUrl, type: imageType },
   });
 
   fs.writeFileSync("./public/feed.xml", feed.xml({ indent: true }));

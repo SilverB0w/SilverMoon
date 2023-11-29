@@ -11,7 +11,7 @@ export default async function generateRssFeed() {
   const allPosts = await posts;
 
   const feedOptions = {
-    title: 新月集",
+    title: "新月集",
     description: "有关在蓝星的一切",
     site_url: site_url,
     feed_url: `${site_url}/feed.xml`,
@@ -27,13 +27,25 @@ export default async function generateRssFeed() {
 
   allPosts.map((post) => {
     let date = new Date(post.frontmatter.date.slice(0, 4), post.frontmatter.date.slice(4, 6) - 1, post.frontmatter.date.slice(6, 8));
+    const imageUrl = `https://img.mo3on.com${post.frontmatter.coverImage}`;
+    console.log('Cover image URL:', imageUrl);
+    const imageType = imageUrl.endsWith('.png') ? 'image/png' : (imageUrl.endsWith('.jpg') || imageUrl.endsWith('.jpeg')) ? 'image/jpeg' : '';
+  
+    const content = `
+      <img src="${imageUrl}" alt="${post.frontmatter.title}" />
+      ${post.content}
+    `;
+  
     feed.item({
       title: post.frontmatter.title,
       description: post.frontmatter.description,
-      url: `${site_url}/blog/${post.slug}`,
-
+      url: `https://mo3on.com/blog/${post.slug}`,
       date: date,
       author: `${siteMetadata.author}`,
+      enclosure: { url: imageUrl, type: imageType },
+      custom_elements: [
+        { 'content:encoded': content },
+      ],
     });
   });
 
