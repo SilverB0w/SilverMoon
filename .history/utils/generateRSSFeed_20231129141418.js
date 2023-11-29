@@ -41,6 +41,7 @@ export default async function generateRssFeed() {
       date: date,
       author: `${siteMetadata.author}`,
       enclosure: { url: imageUrl, type: imageType },
+
     });
   });
 
