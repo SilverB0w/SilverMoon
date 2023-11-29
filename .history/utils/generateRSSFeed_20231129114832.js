@@ -3,6 +3,7 @@ import siteMetadata from "/data/siteMetadata";
 import fs from "fs";
 import { getAllPosts } from "./mdx";
 
+
 export default async function generateRssFeed() {
   const site_url = "https://mo3on.com/";
 
@@ -24,11 +25,12 @@ export default async function generateRssFeed() {
 
   const feed = new RSS(feedOptions);
 
-  allPosts.forEach((post) => {
-    const date = new Date(post.frontmatter.date.slice(0, 4), post.frontmatter.date.slice(4, 6) - 1, post.frontmatter.date.slice(6, 8));
+  allPosts.map((post) => {
+    let date = new Date(post.frontmatter.date.slice(0, 4), post.frontmatter.date.slice(4, 6) - 1, post.frontmatter.date.slice(6, 8));
     const imageUrl = `https://img.mo3on.com${post.frontmatter.coverImage}`;
-    const imageType = imageUrl.match(/\.(jpg|jpeg|png)$/i) ? (imageUrl.match(/\.png$/i) ? 'image/png' : 'image/jpeg') : '';
-
+    console.log('Cover image URL:', imageUrl);
+    const imageType = imageUrl.endsWith('.png') ? 'image/png' : (imageUrl.endsWith('.jpg') || imageUrl.endsWith('.jpeg')) ? 'image/jpeg' : '';
+  
     const content = `
       <img src="${imageUrl}" alt="${post.frontmatter.title}" />
       ${post.content}
@@ -48,4 +50,5 @@ export default async function generateRssFeed() {
   });
 
   fs.writeFileSync("./public/feed.xml", feed.xml({ indent: true }));
+  
 }

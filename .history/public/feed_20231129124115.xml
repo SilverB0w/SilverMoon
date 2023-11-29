@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[新月集]]></title>
+        <description><![CDATA[有关在蓝星的一切]]></description>
+        <link>https://mo3on.com/</link>
+        <image>
+            <url>https://img.mo3on.com/2023/08/avatar.jpg</url>
+            <title>新月集</title>
+            <link>https://mo3on.com/</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Wed, 29 Nov 2023 03:22:16 GMT</lastBuildDate>
+        <atom:link href="https://mo3on.com/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Wed, 29 Nov 2023 03:22:16 GMT</pubDate>
+        <copyright><![CDATA[© 隽敏 2023- 2023]]></copyright>
+        <managingEditor><![CDATA[隽敏]]></managingEditor>
+        <webMaster><![CDATA[隽敏]]></webMaster>
+        <ttl>60</ttl>
+<item>
+            <title><![CDATA[有什么柿 | 时间的维度]]></title>
+            <description><![CDATA[一辈子那么长，又那么短]]></description>
+            <link>https://mo3on.com/blog/2023-07-17·Dimension_of_Time</link>
+            <guid isPermaLink="true">https://mo3on.com/blog/2023-07-17·Dimension_of_Time</guid>
+            <dc:creator><![CDATA[隽敏]]></dc:creator>
+            <pubDate>Sun, 16 Jul 2023 16:00:00 GMT</pubDate>
+            <enclosure url="https://img.mo3on.com/2023/07/dimension_of_time.jpg" length="0" type="image/jpeg"/>
+        </item>
