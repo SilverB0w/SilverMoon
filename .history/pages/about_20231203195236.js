@@ -14,7 +14,7 @@ export default function about() {
           <h2 className="text-[22px] font-semibold">个人简介</h2>
 
           <p className="mt-2 sm:mt-3 mb-3">
-          我的名字叫隽敏，Jimmy，取名致敬<a href="https://zh.wikipedia.org/wiki/今敏" target="_blank">动画大师 — 今敏</a> , <a href="https://zh.wikipedia.org/wiki/阿尔贝·加缪" target="_blank">文学巨匠 — 加缪</a>。住在蓝星北部的阿宅特供区一带，不婚不育。
+          我的名字叫隽敏，Jimmy，取名致敬<a href="https://zh.wikipedia.org/wiki/今敏" target="_blank">动画大师 — 今敏</a> , <a href="https://zh.wikipedia.org/wiki/阿尔贝·加缪" target="_blank">文学巨匠 — 加缪</a>。
           </p>
 
           <p className="mt-2 sm:mt-3 mb-3">

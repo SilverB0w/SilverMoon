@@ -14,11 +14,11 @@ export default function about() {
           <h2 className="text-[22px] font-semibold">个人简介</h2>
 
           <p className="mt-2 sm:mt-3 mb-3">
-          我的名字叫隽敏，Jimmy，取名致敬<a href="https://zh.wikipedia.org/wiki/今敏" target="_blank">动画大师 — 今敏</a> , <a href="https://zh.wikipedia.org/wiki/阿尔贝·加缪" target="_blank">文学巨匠 — 加缪</a>。住在蓝星北部的阿宅特供区一带，不婚不育。
+          我的名字叫隽敏，Jimmy，取名致敬<a href="https://zh.wikipedia.org/wiki/今敏" target="_blank">动画大师—今敏</a>,
           </p>
 
           <p className="mt-2 sm:mt-3 mb-3">
-          普通碳基生物，供能燃料为睡眠，运动与自由。我不抽烟，巧克力味维他奶仅止于浅尝。晚上11点睡，每天要睡足7.5个小时。睡前，我一定准备好一杯次日早晨喝的水，然后做20分钟的冥想，上了床，马上熟睡。一觉到天亮，决不把疲劳和压力，留到第二天。医生都说我很正常。
+          普通碳基生物，供能燃料为睡眠，运动与自由。住在蓝星北部的阿宅特供区一带，不婚不育。我不抽烟，巧克力味维他奶仅止于浅尝。晚上11点睡，每天要睡足7.5个小时。睡前，我一定准备好一杯次日早晨喝的水，然后做20分钟的冥想，上了床，马上熟睡。一觉到天亮，决不把疲劳和压力，留到第二天。医生都说我很正常。
           </p>
 
           

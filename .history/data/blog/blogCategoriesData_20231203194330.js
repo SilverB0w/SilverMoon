@@ -8,7 +8,7 @@ const blogCategoriesData = [
       name: "博闻强识",
       desc: "系统笔记，攻略",
       url: "study",
-      num: "2",
+      num: "0",
     },
     {
       name: "日常随笔",
